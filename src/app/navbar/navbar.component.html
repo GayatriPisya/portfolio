@@ -1,13 +1,21 @@
 <nav class="navbar">
-    <div class="navbar-brand">
-      <img src="/g3.jpeg" alt="Gayatri Pisya" class="profile-photo" />
-      <h2 class="logo">Pisya Gayatri</h2>
-    </div>
-    <ul class="navbar-links">
+  <div class="navbar-brand">
+    <img src="/g3.jpeg" class="profile-photo" alt="Profile Photo">
+    <span class="logo">Pisya Gayatri</span>
+  </div>
+  
+  <div class="menu-toggle" (click)="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+  
+  <ul class="navbar-links" [class.active]="isMenuOpen">
+    <ul class="navbar-links" id="navbar-links">
       <li><a href="#about"><i class="fas fa-user-circle"></i> About</a></li>
-      <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li> 
+      <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
       <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
       <li><a href="#contact"><i class="fas fa-envelope-open"></i> Contact</a></li>
     </ul>
-  </nav>
-  
+  </ul>
+</nav>
+
+

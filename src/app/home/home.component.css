@@ -1,3 +1,4 @@
+/* General bubble styles */
 .bubbles {
   position: absolute;
   width: 100%;
@@ -35,17 +36,19 @@
 .bubble:nth-child(7) { background: rgba(240, 128, 128, 0.892); }
 .bubble:nth-child(8) { background: rgba(238, 130, 238, 0.951); }
 
+/* Body styles */
 body {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Start content slightly from top */
+  align-items: flex-start;
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #2E073F; /* Dark background color */
-  overflow: hidden; /* Prevent scrollbars */
+  background-color: #2E073F;
+  overflow: hidden;
 }
 
+/* Content container */
 .content {
   display: flex;
   flex-direction: column;
@@ -53,22 +56,32 @@ body {
   text-align: center;
   z-index: 1;
   color: white;
-  margin-top: 150px; /* Adjust this value to control how far down the content starts */
+  margin-top: 150px;
 }
 
+/* Greeting section for larger screens */
 .greeting {
+  display: flex;
+  align-items: center;
   font-size: 4rem;
+  line-height: 1.2;
+}
+
+/* New class for intro text "Hi, I'm" */
+.intro-text {
+  display: inline;
+  margin-right: 10px;
 }
 
 .signature {
-  font-family:  cursive; /* Change to a cursive font for a signature look */
-  font-size: 4rem; /* Adjust font size */
-  color: #ea00ff; /* Gold color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  font-family: cursive;
+  font-size: 4rem;
+  color: #ea00ff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .titles {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 20px 0;
 }
 
@@ -82,6 +95,17 @@ body {
   0%, 100% { border-color: transparent; }
   50% { border-color: white; }
 }
+.welcome-message {
+  text-align: center;
+  margin: 20px 0;
+  color: white; /* Change to your desired color */
+  font-size: 15px; /* Adjust size as needed */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+
+
+/* Button styles */
 .btn-primary,
 .btn-secondary {
   padding: 15px 30px;
@@ -90,34 +114,32 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  position: relative; /* For hover effect */
-  overflow: hidden; /* Prevents overflow of the pseudo-element */
-  margin: 10px; /* Space between buttons */
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
 }
 
 .btn-primary {
-  background-color: #721cc3; /* BlueViolet */
+  background-color: #721cc3;
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #6A0DAD; /* Darker purple on hover */
-  color: white;
-  box-shadow: 0 0 15px #6e16ac, 0 0 30px #6A0DAD, 0 0 60px #6A0DAD; /* Glowing effect */
+  background-color: #6A0DAD;
+  box-shadow: 0 0 15px #6e16ac, 0 0 30px #6A0DAD, 0 0 60px #6A0DAD;
 }
 
 .btn-secondary {
-  background-color: #DA70D6; /* Orchid */
+  background-color: #DA70D6;
   color: white;
 }
 
 .btn-secondary:hover {
-  background-color: #C71585; /* MediumVioletRed on hover */
-  color: white;
-  box-shadow: 0 0 15px #C71585, 0 0 30px #C71585, 0 0 60px #C71585; /* Glowing effect */
+  background-color: #C71585;
+  box-shadow: 0 0 15px #C71585, 0 0 30px #C71585, 0 0 60px #C71585;
 }
 
-/* Content styling */
+/* Button hover effect */
 .btn-primary::after,
 .btn-secondary::after {
   content: '';
@@ -126,36 +148,106 @@ body {
   left: 50%;
   width: 300%;
   height: 300%;
-  background: rgba(255, 255, 255, 0.2); /* Light white overlay */
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transition: all 0.5s ease;
-  transform: translate(-50%, -50%) scale(0); /* Start hidden */
+  transform: translate(-50%, -50%) scale(0);
   z-index: 0;
 }
 
 .btn-primary:hover::after,
 .btn-secondary:hover::after {
-  transform: translate(-50%, -50%) scale(1); /* Scale to full size on hover */
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
-  position: relative; /* Bring the button to the top during hover */
-  z-index: 1; /* Ensure the button text is above the pseudo-element */
-}
-.btn-primary i,
-.btn-secondary i {
-  margin-right: 8px; /* Space between icon and text */
-  font-size: 1.2rem; /* Adjust icon size */
+  position: relative;
+  z-index: 1;
 }
 
+.btn-primary i,
+.btn-secondary i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+
+/* Mobile view: "Hi, I'm" should be on top */
 @media (max-width: 768px) {
   .greeting {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .intro-text {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .signature {
     font-size: 2.5rem;
   }
 
   .titles {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .content {
+    margin-top: 100px;
   }
 }
 
+/* Extra small screens (mobile phones) */
+@media (max-width: 480px) {
+  .greeting {
+    margin-top: 120px;
+    font-size: 2.5rem;
+  }
+
+  .signature {
+    font-size: 3rem;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .titles {
+    font-size: 2.2rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 8px 15px;
+  }
+
+  .content {
+    margin-top: 80px;
+  }
+
+  .profile-photo {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .welcome-message {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-message {
+    font-size: 0.9rem; /* Even smaller for extra small screens */
+    margin-top: 5px;
+  }
+}
