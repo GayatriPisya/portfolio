@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Aligns the brand and links */
+    align-items: center; /* Centers items vertically */
+    padding: 15px; /* Adds space around the navbar */
+    background: rgba(90, 62, 141, 0.8); /* Set a semi-transparent background color */
+    backdrop-filter: blur(8px); /* Apply blur effect to the background */
+    position: fixed; /* Keep the navbar fixed at the top */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 1000; /* Ensure it sits above other content */
+    top: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Center the photo and text vertically */
+}
+
+.profile-photo {
+    width: 40px; /* Set the desired width for the photo */
+    height: 40px; /* Set the desired height for the photo */
+    border-radius: 50%; /* Make the photo circular */
+    border: solid 2px #231d30;
+    margin-right: 5px; /* Space between photo and name */
+}
+
+.logo {
+    font-family: 'Pacifico', cursive; /* Example font family */
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #fff; /* Change to your desired color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional shadow for logo effect */
+}
+
+.navbar-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Aligns links in a row */
+}
+
+.navbar-links li {
+    margin-left: 20px; /* Space between links */
+}
+
+.navbar-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color change and scaling */
+    display: flex; /* Center icons and text */
+    align-items: center; /* Center vertically */
+    font-size: 20px; /* Increased font size for links */
+    padding: 10px; /* Add padding for larger clickable area */
+    border-radius: 5px; /* Optional: add rounded corners */
+    position: relative; /* Position relative for pseudo-element */
+    overflow: hidden; /* Hide overflow */
+}
+
+
+.navbar-links a::after {
+    content: ''; /* Create pseudo-element */
+    position: absolute;
+    height: 2px; /* Thickness of the line */
+    width: 100%; /* Full width */
+    background: #d1c4e9; /* Line color */
+    bottom: 0; /* Position at the bottom */
+    left: -100%; /* Start from left */
+    transition: left 0.3s; /* Transition for the slide */
+}
+
+.navbar-links a:hover::after {
+    left: 0; /* Slide in on hover */
+}
+
+
+.navbar-links a i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to start */
+    }
+    
+    .navbar-links {
+        flex-direction: column; /* Vertical links */
+        gap: 10px; /* Space between links */
+    }
+}

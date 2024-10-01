@@ -1,0 +1,161 @@
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -150px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: rise 8s infinite;
+  opacity: 0.6;
+}
+
+.bubble:nth-child(1) { background: rgb(135, 206, 250); }
+.bubble:nth-child(2) { background: rgb(255, 105, 180); }
+.bubble:nth-child(3) { background: rgba(255, 217, 0, 0.997); }
+.bubble:nth-child(4) { background: rgba(0, 255, 128, 0.941); }
+.bubble:nth-child(5) { background: rgb(173, 216, 230); }
+.bubble:nth-child(6) { background: rgba(255, 166, 0, 0.899); }
+.bubble:nth-child(7) { background: rgba(240, 128, 128, 0.892); }
+.bubble:nth-child(8) { background: rgba(238, 130, 238, 0.951); }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Start content slightly from top */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #2E073F; /* Dark background color */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  margin-top: 150px; /* Adjust this value to control how far down the content starts */
+}
+
+.greeting {
+  font-size: 4rem;
+}
+
+.signature {
+  font-family:  cursive; /* Change to a cursive font for a signature look */
+  font-size: 4rem; /* Adjust font size */
+  color: #ea00ff; /* Gold color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.titles {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.typing-animation {
+  display: inline-block;
+  border-right: 2px solid white;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+.btn-primary,
+.btn-secondary {
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative; /* For hover effect */
+  overflow: hidden; /* Prevents overflow of the pseudo-element */
+  margin: 10px; /* Space between buttons */
+}
+
+.btn-primary {
+  background-color: #721cc3; /* BlueViolet */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #6A0DAD; /* Darker purple on hover */
+  color: white;
+  box-shadow: 0 0 15px #6e16ac, 0 0 30px #6A0DAD, 0 0 60px #6A0DAD; /* Glowing effect */
+}
+
+.btn-secondary {
+  background-color: #DA70D6; /* Orchid */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #C71585; /* MediumVioletRed on hover */
+  color: white;
+  box-shadow: 0 0 15px #C71585, 0 0 30px #C71585, 0 0 60px #C71585; /* Glowing effect */
+}
+
+/* Content styling */
+.btn-primary::after,
+.btn-secondary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2); /* Light white overlay */
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  transform: translate(-50%, -50%) scale(0); /* Start hidden */
+  z-index: 0;
+}
+
+.btn-primary:hover::after,
+.btn-secondary:hover::after {
+  transform: translate(-50%, -50%) scale(1); /* Scale to full size on hover */
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  position: relative; /* Bring the button to the top during hover */
+  z-index: 1; /* Ensure the button text is above the pseudo-element */
+}
+.btn-primary i,
+.btn-secondary i {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 2.5rem;
+  }
+
+  .titles {
+    font-size: 1.5rem;
+  }
+}
+
