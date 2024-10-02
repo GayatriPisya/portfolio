@@ -192,7 +192,7 @@ body {
   }
 
   .titles {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .btn-primary, .btn-secondary {
@@ -222,7 +222,7 @@ body {
   }
 
   .titles {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .btn-primary, .btn-secondary {
@@ -240,14 +240,14 @@ body {
 }
 @media (max-width: 768px) {
   .welcome-message {
-    font-size: 0.9rem; /* Smaller font size for mobile */
+    font-size: 0.6rem; /* Smaller font size for mobile */
     margin-top: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .welcome-message {
-    font-size: 0.9rem; /* Even smaller for extra small screens */
+    font-size: 0.6rem; /* Even smaller for extra small screens */
     margin-top: 5px;
   }
 }
