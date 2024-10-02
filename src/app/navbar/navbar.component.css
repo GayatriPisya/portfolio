@@ -105,11 +105,11 @@
     .navbar-links {
       display: none; /* Hide links by default */
       flex-direction: column; /* Stack links vertically */
-      background-color: rgba(90, 62, 141, 0.9); /* Menu background color */
+      background-color: rgba(79, 45, 143, 0.723); /* Menu background color */
       position: absolute; /* Allow it to overlay the screen */
-      top: 70px; /* Position below the navbar */
-      width: 100%; /* Full width menu */
-      left: 0;
+      top: 80px; /* Position below the navbar */
+      width: 50%; /* Full width menu */
+      right: 0;
     }
   
     .navbar-links.active {
