@@ -112,23 +112,14 @@
       height:1000%;
       right: 0;
     }
-  
-   /* Default state for the circle icon */
-.fas.fa-circle-notch {
-  font-size: 24px; /* Adjust the size as needed */
-  transition: transform 0.5s ease;
-}
-
-/* Rotate effect when menu is open */
-.rotate {
-  transform: rotate(360deg);
-}
 
 /* Optional: styling for the menu when it is opened */
 .navbar-links.active {
   /* Add your menu open styles here */
-  display: block;
-}  
+  display: flex;
+}
+
+  
     .navbar-links li {
       text-align: center;
       padding: 10px;
