@@ -1,0 +1,115 @@
+.about-container {
+  padding: 30px;
+  margin-top: 80px; /* Adjust this value based on your navbar height */
+  background-color: #2e073f;
+  color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #cf66ff;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.profile-photo {
+  width: 250px;
+  height: auto;
+  border-radius: 40%;
+  border: solid 4px #231d30;
+  margin: 20px;
+}
+
+.about-text {
+  max-width: 800px;
+  text-align: left;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #cf66ff;
+}
+
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(72, 45, 123, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: scale(1.02);
+}
+
+.education-item i {
+  font-size: 2.5rem;
+  margin-right: 20px;
+  color: #d1c4e9;
+}
+
+.education-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.education-details p {
+  margin: 5px 0;
+  color: #e0e0e0;
+}
+
+.education-details strong {
+  color: #cf66ff;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin: 0 auto 20px auto;
+  }
+
+  .about-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .education-item {
+    width: 100%;
+  }
+}
