@@ -9,7 +9,6 @@ body {
   overflow: hidden;
 }
 
-/* Content container */
 .content {
   display: flex;
   flex-direction: column;
@@ -20,7 +19,6 @@ body {
   margin-top: 150px;
 }
 
-/* Greeting section for larger screens */
 .greeting {
   display: flex;
   align-items: center;
@@ -28,7 +26,6 @@ body {
   line-height: 1.2;
 }
 
-/* New class for intro text "Hi, I'm" */
 .intro-text {
   display: inline;
   margin-right: 10px;
@@ -59,14 +56,12 @@ body {
 .welcome-message {
   text-align: center;
   margin: 20px 0;
-  color: white; /* Change to your desired color */
-  font-size: 15px; /* Adjust size as needed */
+  color: white; 
+  font-size: 15px; 
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-
-/* Button styles */
 .btn-primary,
 .btn-secondary {
   padding: 15px 30px;
@@ -100,7 +95,6 @@ body {
   box-shadow: 0 0 15px #C71585, 0 0 30px #C71585, 0 0 60px #C71585;
 }
 
-/* Button hover effect */
 .btn-primary::after,
 .btn-secondary::after {
   content: '';
@@ -133,9 +127,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Media Queries */
-
-/* Mobile view: "Hi, I'm" should be on top */
 @media (max-width: 768px) {
   .greeting {
     display: block;
@@ -166,7 +157,6 @@ body {
   }
 }
 
-/* Extra small screens (mobile phones) */
 @media (max-width: 480px) {
   .greeting {
     margin-top: 120px;
@@ -201,14 +191,14 @@ body {
 }
 @media (max-width: 768px) {
   .welcome-message {
-    font-size: 0.6rem; /* Smaller font size for mobile */
+    font-size: 0.6rem; 
     margin-top: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .welcome-message {
-    font-size: 0.6rem; /* Even smaller for extra small screens */
+    font-size: 0.6rem; 
     margin-top: 5px;
   }
 }

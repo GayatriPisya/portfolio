@@ -1,11 +1,7 @@
-/* General Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: rgba(72, 45, 123, 0.366); /* Semi-transparent background */
-    backdrop-filter: blur(5px); /* Blur effect */
+    backdrop-filter: blur(5px); 
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -31,8 +27,7 @@
    
   }
   
-  
-  /* Desktop Links */
+
   .navbar-links {
     list-style: none;
     display: flex;
@@ -74,7 +69,6 @@
     margin-right: 5px;
   }
   
-  /* Menu toggle styles for mobile view */
   .menu-toggle {
     display: none;
     cursor: pointer;
@@ -86,36 +80,32 @@
     font-size: 30px;
   }
   
-  /* Mobile menu is hidden by default */
   .navbar-links {
     display: flex;
   }
   
-  /* Show menu when 'active' class is applied */
   .navbar-links.active {
     display: flex;
   }
   
-  /* Responsive styles */
+
   @media (max-width: 768px) {
     .menu-toggle {
-      display: block; /* Display hamburger menu on smaller screens */
+      display: block;
     }
   
     .navbar-links {
-      display: none; /* Hide links by default */
-      flex-direction: column; /* Stack links vertically */
-      background-color: rgba(91, 34, 120, 0.911); /* Menu background color */
-      position: absolute; /* Allow it to overlay the screen */
-      top: 80px; /* Position below the navbar */
-      width: 50%; /* Full width menu */
+      display: none; 
+      flex-direction: column; 
+      background-color: rgba(91, 34, 120, 0.911); 
+      position: absolute; 
+      top: 80px; 
+      width: 50%; 
       height:1000%;
       right: 0;
     }
 
-/* Optional: styling for the menu when it is opened */
 .navbar-links.active {
-  /* Add your menu open styles here */
   display: flex;
 }
 
@@ -128,11 +118,11 @@
     .navbar-links a {
       font-size: 18px;
       padding: 15px 0;
-      width: 100%; /* Full width links */
-      color: white; /* Ensure text color is white in mobile view */
-      transition: all 0.3s ease; /* Smooth transition for hover */
-      position: relative; /* Position relative for pseudo-element */
-      overflow: hidden; /* Prevent overflow */
+      width: 100%; 
+      color: white; 
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden; 
     }
   
     .navbar-links a::after {
@@ -143,20 +133,20 @@
       background: #d1c4e9;
       bottom: 0;
       left: -100%;
-      transition: left 0.3s ease; /* Smooth slide-in effect */
+      transition: left 0.3s ease; 
     }
   
     .navbar-links a:hover::after {
-      left: 0; /* Slide in on hover for mobile */
+      left: 0; 
     }
   
     .navbar-links a i {
-      margin-right: 5px; /* Space between icon and text */
-      transition: color 0.3s ease; /* Smooth color transition for icons */
+      margin-right: 5px; 
+      transition: color 0.3s ease; 
     }
   
     .navbar-links a:hover i {
-      color: #d1c4e9; /* Change icon color on hover */
+      color: #d1c4e9; 
     }
   }
   

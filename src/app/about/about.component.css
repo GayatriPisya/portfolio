@@ -72,8 +72,8 @@ h2 {
 }
 
 .education-item:hover {
-  transform: translateY(-10px); /* Moves the card upwards */
-  box-shadow: 0 10px 20px rgba(161, 69, 207, 0.989); /* Creates a glowing effect */
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(161, 69, 207, 0.989); 
 }
 
 .education-item i {
@@ -107,7 +107,7 @@ h2 {
   }
 
   h1 {
-    font-size: 2rem; /* Adjusted for smaller screens */
+    font-size: 2rem; 
   }
 
   .about-content {
@@ -117,29 +117,29 @@ h2 {
   }
 
   .profile-photo {
-    width: 200px; /* Smaller profile photo on mobile */
+    width: 200px; 
     margin: 0 auto 20px auto;
   }
 
   .about-text {
-    max-width: 100%; /* Full width on mobile */
+    max-width: 100%;
     padding: 10px;
   }
 
   .education-section {
-    width: 100%; /* Full width for education section */
+    width: 100%; 
     flex-direction: column;
   }
 
   .education-item {
-    width: 90%; /* Slightly narrower items for mobile */
+    width: 90%; 
   }
 
   .education-item i {
-    font-size: 2rem; /* Smaller icons for mobile */
+    font-size: 2rem; 
   }
 
   .about-text p {
-    font-size: 1rem; /* Smaller text for readability */
+    font-size: 1rem; 
   }
 }
