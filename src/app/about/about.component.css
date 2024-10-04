@@ -23,10 +23,12 @@ h1 {
 }
 
 .profile-photo {
-  width: 250px;
+  width: 300px;
   height: auto;
-  border-radius: 40%;
-  border: solid 4px #231d30;
+  border-radius: 20%;
+  border: solid 4px #000000dd;
+  
+  z-index: 1;
   margin: 20px;
 }
 
@@ -52,25 +54,26 @@ h2 {
 
 .education-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 20px;
 }
-
 .education-item {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: flex-start;
   background: rgba(72, 45, 123, 0.6);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   width: 80%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-item:hover {
-  transform: scale(1.02);
+  transform: translateY(-10px); /* Moves the card upwards */
+  box-shadow: 0 10px 20px rgba(161, 69, 207, 0.989); /* Creates a glowing effect */
 }
 
 .education-item i {
@@ -80,12 +83,15 @@ h2 {
 }
 
 .education-details h3 {
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
   font-size: 1.5rem;
   color: #fff;
 }
 
 .education-details p {
+  text-align: center;
   margin: 5px 0;
   color: #e0e0e0;
 }
@@ -94,22 +100,46 @@ h2 {
   color: #cf66ff;
 }
 
+/* Mobile View */
 @media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjusted for smaller screens */
+  }
+
   .about-content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .profile-photo {
+    width: 200px; /* Smaller profile photo on mobile */
     margin: 0 auto 20px auto;
   }
 
   .about-text {
-    text-align: center;
+    max-width: 100%; /* Full width on mobile */
     padding: 10px;
   }
 
+  .education-section {
+    width: 100%; /* Full width for education section */
+    flex-direction: column;
+  }
+
   .education-item {
-    width: 100%;
+    width: 90%; /* Slightly narrower items for mobile */
+  }
+
+  .education-item i {
+    font-size: 2rem; /* Smaller icons for mobile */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Smaller text for readability */
   }
 }

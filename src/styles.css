@@ -13,3 +13,41 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* General bubble styles */
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -150px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: rise 8s infinite;
+  opacity: 0.6;
+}
+
+.bubble:nth-child(1) { background: rgb(135, 206, 250); }
+.bubble:nth-child(2) { background: rgb(255, 105, 180); }
+.bubble:nth-child(3) { background: rgba(255, 217, 0, 0.997); }
+.bubble:nth-child(4) { background: rgba(0, 255, 128, 0.941); }
+.bubble:nth-child(5) { background: rgb(173, 216, 230); }
+.bubble:nth-child(6) { background: rgba(255, 166, 0, 0.899); }
+.bubble:nth-child(7) { background: rgba(240, 128, 128, 0.892); }
+.bubble:nth-child(8) { background: rgba(238, 130, 238, 0.951); }
+
