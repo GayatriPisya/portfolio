@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: rgba(128, 0, 128, 0.107);
+    background-color: rgba(59, 4, 59, 0.14);
     backdrop-filter: blur(10px); 
     position: fixed;
     width: 100%;
