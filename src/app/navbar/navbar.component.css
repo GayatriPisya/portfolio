@@ -1,7 +1,8 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    backdrop-filter: blur(5px); 
+    background-color: rgba(128, 0, 128, 0.107);
+    backdrop-filter: blur(10px); 
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -11,6 +12,7 @@
   .navbar-brand {
     display: flex;
     align-items: center;
+    padding: 13px;
   }
   
   .profile-photo {
@@ -30,6 +32,7 @@
 
   .navbar-links {
     list-style: none;
+    padding: 13px;
     display: flex;
   }
   
@@ -71,6 +74,7 @@
   
   .menu-toggle {
     display: none;
+    
     cursor: pointer;
     font-size: 30px;
     color: white;
@@ -92,22 +96,25 @@
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
+      margin-right: 20px;
+      margin-top: 25px;
     }
   
     .navbar-links {
       display: none; 
       flex-direction: column; 
-      background-color: rgba(91, 34, 120, 0.911); 
-      position: absolute; 
+      background-color: rgba(57, 5, 57, 0.599);
+      backdrop-filter: blur(10px); 
+      position: absolute;
       top: 80px; 
       width: 50%; 
       height:1000%;
       right: 0;
     }
 
-.navbar-links.active {
-  display: flex;
-}
+    .navbar-links.active {
+      display: flex;
+    }
 
   
     .navbar-links li {
