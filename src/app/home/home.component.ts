@@ -7,7 +7,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  titles: string[] = [ 'Full Stack Developer', 'Web Developer', 'Web Designer', 'Prompt Engineer'];
+  titles: string[] = [ 'Full Stack Developer', 'Web Designer', 'Software Engineer', 'Prompt Engineer'];
   currentTitle: string = '';
   currentIndex: number = 0;
   isDeleting: boolean = false;

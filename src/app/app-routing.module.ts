@@ -8,8 +8,8 @@ import { SkillsComponent } from './skills/skills.component';
 const routes: Routes = [
   { path: '', component: HomeComponent }, 
   { path: 'about', component: AboutComponent },
-  { path: '**', redirectTo: '/home' },
-  { path: 'skills', component: SkillsComponent }
+  { path: 'skills', component: SkillsComponent },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({

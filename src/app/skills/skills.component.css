@@ -1,46 +1,82 @@
-.skills-container {
-    padding: 50px;
-    background-color: #2e073f;
-    color: #f5f5f5;
-    text-align: center;
-  }
-  
-  .skills-container h2 {
-    font-size: 2.5rem;
-    color: #cf66ff;
-    margin-bottom: 40px;
-  }
-  
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .skill-card {
-    background: rgba(72, 45, 123, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 150px;
-  }
-  
-  .skill-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .skill-card i {
-    font-size: 2.5rem;
-    color: #cf66ff;
-    margin-bottom: 10px;
-  }
-  
-  .skill-card h3 {
-    font-size: 1.25rem;
-    color: #fff;
-  }
-  
+/* Skills section */
+#skills {
+  margin-top: 100px;
+  color: aliceblue;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: aliceblue;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+.skill-card {
+  width: 200px; /* Adjust as needed */
+  margin: 5px;
+  height: 200px; /* Adjust as needed */
+  perspective: 1000px; /* Enables 3D space */
+  position: relative;
+}
+
+.skill-front,
+.skill-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  backface-visibility: hidden; /* Hide the back side */
+  transition: transform 0.5s; /* Animation effect */
+}
+
+.skill-front {
+  background: rgba(110, 69, 187, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-front img {
+  width: 50%; /* Adjust icon size */
+}
+
+.skill-back {
+  background: rgba(72, 45, 123, 0.6);
+  display: flex;
+  flex-direction: column; /* Stack icon and text */
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg); /* Rotate back side */
+}
+
+.skill-back i {
+  font-size: 50px; /* Adjust icon size */
+  margin-bottom: 10px; /* Space between icon and text */
+  color: #ffffff; /* Icon color */
+}
+
+.skill-back p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 5px;
+  padding: 10px;
+}
+
+.skill-card:hover .skill-front {
+  transform: rotateY(180deg); /* Rotate front to back */
+}
+
+.skill-card:hover .skill-back {
+  transform: rotateY(0); /* Show back */
+}
