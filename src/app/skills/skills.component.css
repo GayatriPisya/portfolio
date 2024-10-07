@@ -1,6 +1,7 @@
 /* Skills section */
 #skills {
-  margin-top: 100px;
+  margin-top: 90px;
+  margin-bottom: 100px;
   color: aliceblue;
   padding: 50px;
   border-radius: 10px;
@@ -32,9 +33,9 @@ h3 {
 
 /* Skill card style */
 .skill-card {
-  width: 200px; /* Adjust as needed */
+  width: 250px; /* Adjust as needed */
   margin: 5px;
-  height: 200px; /* Adjust as needed */
+  height: 250px; /* Adjust as needed */
   perspective: 1000px; /* Enables 3D space */
   position: relative;
 }
@@ -52,6 +53,7 @@ h3 {
 /* Front side of the skill card */
 .skill-front {
   background: rgba(110, 69, 187, 0.6);
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +75,7 @@ h3 {
 
 .skill-back i {
   font-size: 50px; /* Adjust icon size */
-  margin-bottom: 10px; /* Space between icon and text */
+  margin-bottom: 5px; /* Space between icon and text */
   color: #ffffff; /* Icon color */
 }
 
