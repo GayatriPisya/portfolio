@@ -48,7 +48,8 @@ h1 {
 h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 2opx;
   font-weight: 600;
   color: #cf66ff;
 }
@@ -60,6 +61,8 @@ h2 {
   gap: 20px;
 }
 .education-item {
+  z-index: 1;
+    position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -110,6 +113,8 @@ h2 {
 }
 
 .experience-item {
+  z-index: 1;
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -156,25 +161,27 @@ h2 {
 .github-button {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the icon and text */
-  padding: 10px 15px; /* Adjust padding for the button */
-  background-color: #000000; /* GitHub dark background */
+  justify-content: center; /* Center the button content */
+  padding: 10px 15px;
+  background-color: #000000;
   width: fit-content;
-  color: #fff; /* White text */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
-  text-decoration: none; /* Remove underline from link */
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+  margin: 0 auto; /* This will center the button */
 }
 
 .github-button i {
-  margin-right: 5px; /* Space between icon and text */
-  font-size: 1.5rem; /* Increase icon size for mobile */
+  margin-right: 5px;
+  font-size: 1.5rem;
 }
 
-.github-button:hover i {
-  color: #fff; /* White text on hover */
-  background-color: #8040b8;
+.github-button:hover {
+  color: #fff;
+  background-color: #8c4bc6e4;
 }
+
 
 
 /* Mobile View */
