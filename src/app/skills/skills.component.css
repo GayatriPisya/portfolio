@@ -1,23 +1,28 @@
 /* Skills section */
 #skills {
-  margin-top: 90px;
-  margin-bottom: 100px;
-  color: aliceblue;
-  padding: 50px;
-  border-radius: 10px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding: 30px;
+  color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 
-h2 {
-  color: aliceblue;
-  font-size: 2rem;
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  font-weight: 700;
+  color: #cf66ff;
+  text-shadow: 0 0 10px #390651, 0 0 20px #cf66ff, 0 0 30px #cf66ffe3;
+  transition: text-shadow 0.3s ease;
 }
+
 
 /* Centering h3 headings */
 h3 {
-  color: aliceblue;
-  font-size: 1.5rem;
+  color: #cf66ff;
+  font-size: 2rem;
   margin-top: 50px;
   margin-bottom: 20px;
   text-align: center; /* Center the heading */
@@ -52,7 +57,7 @@ h3 {
 
 /* Front side of the skill card */
 .skill-front {
-  background: rgba(110, 69, 187, 0.6);
+  background: rgba(110, 69, 187, 0.408);
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -111,70 +116,4 @@ h3 {
 /* General margin for sectioning */
 .skill-section {
   margin-bottom: 50px;
-}
-/* Skills section mobile responsive */
-@media (max-width: 768px) {
-  #skills {
-    padding: 20px;
-  }
-
-  h2 {
-    font-size: 1.5rem; /* Adjust heading size for mobile */
-  }
-
-  h3 {
-    font-size: 1.2rem; /* Adjust subheading size */
-  }
-
-  .skill-container {
-    flex-direction: column; /* Stack skill cards vertically on mobile */
-    align-items: center;
-  }
-
-  .skill-card {
-    width: 100%; /* Full width for skill cards on mobile */
-    height: auto; /* Adjust height based on content */
-    margin: 10px 0; /* Add margin for better spacing */
-  }
-
-  .skill-front img {
-    width: 40%; /* Slightly reduce the size of images */
-  }
-
-  .skill-back i {
-    font-size: 40px; /* Reduce icon size for mobile */
-  }
-
-  .skill-back p {
-    font-size: 1rem; /* Adjust text size for better readability */
-    padding: 5px;
-  }
-}
-
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) {
-  h2 {
-    font-size: 1.2rem; /* Further reduce heading size */
-  }
-
-  h3 {
-    font-size: 1rem; /* Adjust subheading size for small screens */
-  }
-
-  .skill-card {
-    height: auto; /* Automatic height for cards on smaller screens */
-    margin: 15px 0;
-  }
-
-  .skill-back i {
-    font-size: 35px; /* Slightly smaller icons */
-  }
-
-  .skill-back p {
-    font-size: 0.9rem; /* Smaller text for tight spaces */
-  }
-
-  .skill-front img {
-    width: 35%; /* Adjust image size to fit the card */
-  }
 }
