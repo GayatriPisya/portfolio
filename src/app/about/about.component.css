@@ -133,7 +133,6 @@ h2 {
   height: auto;
   margin-bottom: 10px; /* Space between logo and text */
 }
-
 .experience-details h3 {
   margin-top: 10px; /* Adjusted for better spacing */
   margin-bottom: 5px;
@@ -169,8 +168,7 @@ h2 {
 
 .github-button i {
   margin-right: 5px; /* Space between icon and text */
-  font-size: 2rem; /* Increase icon size for mobile */
-  transition: color 0.3s; /* Add transition for hover effect */
+  font-size: 1.5rem; /* Increase icon size for mobile */
 }
 
 .github-button:hover i {
