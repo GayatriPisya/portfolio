@@ -154,18 +154,13 @@ h2 {
   height: auto;
   margin-top: 10px; /* Space between text and certificate image */
 }
-.github-container {
-  display: flex;
-  justify-content: center; /* Center the GitHub button */
-  margin: 15px 0; /* Add space above and below the button */
-}
-
 .github-button {
   display: flex;
   align-items: center;
   justify-content: center; /* Center the icon and text */
   padding: 10px 15px; /* Adjust padding for the button */
-  background-color: #333; /* GitHub dark background */
+  background-color: #000000; /* GitHub dark background */
+  width: fit-content;
   color: #fff; /* White text */
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
@@ -174,11 +169,13 @@ h2 {
 
 .github-button i {
   margin-right: 5px; /* Space between icon and text */
+  font-size: 2rem; /* Increase icon size for mobile */
+  transition: color 0.3s; /* Add transition for hover effect */
 }
 
-.github-button:hover {
-  background-color: #555; /* Darker on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+.github-button:hover i {
+  color: #fff; /* White text on hover */
+  background-color: #8040b8;
 }
 
 
@@ -198,7 +195,7 @@ h2 {
   }
 
   .experience-details img {
-    width: 300px; /* Smaller certificate image for mobile */
+    width: 250px; /* Smaller certificate image for mobile */
   }
 }
 /* Mobile View */
