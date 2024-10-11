@@ -8,7 +8,7 @@
   h1 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-weight: 700;
     color: #cf66ff;
     text-shadow: 0 0 10px #390651, 0 0 20px #cf66ff, 0 0 30px #cf66ffe3;
@@ -29,6 +29,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    z-index: 1;
   }
   
   .project-card:hover {
@@ -69,16 +70,67 @@
   }
   
   .btn-github {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
   }
   
   .btn-live {
-    background-color: #28a745;
+    background-color: #b702ff;
     color: #fff;
   }
-  
-  .btn:hover {
-    opacity: 0.8;
+  .btn-github:hover {
+    background-color: #00000091; /* Darker background */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    color: #f5f5f5; /* Change text color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(25, 22, 22, 0.6); /* Glow effect */
+}
+
+.btn-live:hover {
+    background-color: #9900e694; /* Slightly darker purple */
+    transform: scale(1.05); /* Slightly enlarge the button */
+    color: #f5f5f5; /* Change text color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(184, 135, 219, 0.6); /* Glow effect */
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn-github i {
+  color: #fff;
+}
+
+.btn-live i {
+  color: #fff;
+}
+
+/* Icon styling for the Projects heading */
+h1 i {
+  margin: 10px;
+  color: #cf66ff;
+}
+
+  /* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .project-card {
+      padding: 15px;
+      margin-bottom: 20px;
   }
-  
+
+  .projects-container {
+      grid-template-columns: 1fr;
+  }
+
+  .project-card h3 {
+      font-size: 1.25rem;
+  }
+
+  .project-image {
+      max-width: 100%;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+}
