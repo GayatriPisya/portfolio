@@ -1,0 +1,97 @@
+.contact-section {
+    padding: 40px;
+    margin-top: 80px;
+    color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    background-color: #3a2c56; /* Dark background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #cf66ff; /* Vibrant color */
+    text-shadow: 0 0 10px #390651, 0 0 20px #cf66ff, 0 0 30px #cf66ffe3; /* Glow effect */
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #f5f5f5;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border 0.3s ease; /* Added transition for inputs */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 2px solid #cf66ff; /* Border color on focus */
+}
+
+.btn-submit {
+    padding: 12px 20px;
+    background-color: #b702ff; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease; /* Added transition for hover effect */
+}
+
+.btn-submit:hover {
+    background-color: #9a00e6; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn-submit {
+        padding: 10px 16px;
+    }
+}

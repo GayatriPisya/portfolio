@@ -22,7 +22,7 @@
   }
   
   .project-card {
-    background: rgba(92, 60, 152, 0.759);
+    background: rgba(92, 60, 152, 0.456);
     border-radius: 15px;
     padding: 20px;
     width: 100%;
@@ -39,24 +39,23 @@
   
   .project-card h3 {
     font-size: 1.5rem;
-    color: #fff;
+    color: #d3b9d9;
     margin-bottom: 15px;
   }
   
   .project-image-container {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   
   .project-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
   .button-group {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin: 30px;
   }
   
   .btn {

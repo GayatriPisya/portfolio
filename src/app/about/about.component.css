@@ -52,7 +52,7 @@ h2 {
   margin-top: 40px;
   font-weight: 600;
   color: #cf66ff;
-  text-shadow: 0 0 10px #390651, 0 0 20px #cf66ff, 0 0 30px #cf66ffe3;
+  text-shadow: 0 0 10px #390651, 0 0 20px #cf66ff;
   transition: text-shadow 0.3s ease;
 }
 
