@@ -24,10 +24,8 @@ h1 {
 }
 
 .profile-photo {
-  width: 300px;
+  width: 450px;
   height: auto;
-  border-radius: 20%;
-  border: solid 4px #000000dd;
   z-index: 1;
   margin: 20px;
 }
