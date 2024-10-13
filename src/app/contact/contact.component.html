@@ -1,42 +1,56 @@
 <div class="contact-section">
-    <div class="contact-container">
-      
+  <h1><i class="fa-regular fa-address-book"></i> Contact Me</h1>
+  <div class="contact-container">
       <!-- Left Side: Image -->
       <div class="contact-image">
-        <img src="/contact.png" alt="Contact Image">
+          <img src="/contact.png" alt="Contact Image" />
       </div>
-      
+
       <!-- Right Side: Contact Form and Details -->
       <div class="contact-content">
-        
-        <!-- Social Media and Address -->
-        <div class="contact-info">
-          <div class="social-icons">
-            <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+          <!-- Social Media and Address -->
+          <div class="contact-info">
+              <div class="social-icons">
+                  <a href="https://github.com/GayatriPisya" target="_blank" aria-label="GitHub">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gayatri-pisya" target="_blank" aria-label="LinkedIn">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://x.com/Gayatri_pisya" target="_blank" aria-label="Twitter">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+              </div>
+              <p class="contact-email">
+                <i class="fas fa-envelope"></i> gayatripisya&#64;gmail.com</p>
+              <p class="contact-address">
+                  <i class="fas fa-map-marker-alt"></i> Totagummada, Odisha 76121
+              </p>
           </div>
-          <p class="contact-address">
-            <i class="fas fa-map-marker-alt"></i> Totagummada, India
-          </p>
-          <p class="contact-email">
-            <i class="fas fa-envelope"></i> email
-          </p>
-        </div>
-        
-        <!-- Contact Form -->
-        <form class="contact-form">
-          <div class="form-group">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn submit-btn">Send Message</button>
-        </form>
+
+         <!-- Contact Form -->
+<form class="contact-form" method="POST" action="/submit">
+  <div class="form-group">
+      <label for="name">
+          <i class="fas fa-user"></i> <!-- Icon for Name -->
+      </label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+  </div>
+  <div class="form-group">
+      <label for="email">
+          <i class="fas fa-envelope"></i> <!-- Icon for Email -->
+      </label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+  </div>
+  <div class="form-group">
+      <label for="message">
+          <i class="fas fa-comment"></i> <!-- Icon for Message -->
+      </label>
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+  </div>
+  <button type="submit" class="btn submit-btn">Send Message</button>
+</form>
+
       </div>
-    </div>
+  </div>
 </div>
