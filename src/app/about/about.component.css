@@ -161,6 +161,7 @@ h2 {
 .experience-details img {
   width: 430px; /* Adjust certificate image size */
   justify-content: center;
+  align-items: center;
   height: auto;
   margin-top: 10px; /* Space between text and certificate image */
 }
@@ -199,10 +200,12 @@ h2 {
 
   .experience-item {
     width: 90%; /* Use most of the screen width */
+    align-items: center;
   }
 
   .experience-item img {
     width: 150px; /* Smaller logo for mobile */
+    justify-content: center;
   }
 
   .experience-details img {
