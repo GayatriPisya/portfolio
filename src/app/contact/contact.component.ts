@@ -34,13 +34,12 @@ export class ContactComponent {
       },
     };
 
-    // Ensure your private key is correct here
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer MQwVOmZDCvfJtzY8T8cgA', // Add your valid private key here
+      'Authorization': 'Bearer MQwVOmZDCvfJtzY8T8cgA', 
     });
 
-    this.isSending = true; // Disable button while sending
+    this.isSending = true;
 
     this.http
       .post('https://api.emailjs.com/api/v1.0/email/send', emailPayload, {
