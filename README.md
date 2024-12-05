@@ -19,6 +19,9 @@ This is my personal portfolio website, developed using Angular. The website show
   ![image](https://github.com/user-attachments/assets/e063cfc4-bfd1-4281-8c20-b7cfb59ce2f3)
 
 - **Contact**: A form where visitors can contact me for potential collaborations, job opportunities, or inquiries.
+
+  ![image](https://github.com/user-attachments/assets/fda3ee77-c00e-4a18-8730-66ff669b8984)
+
 - **Responsive Design**: The website adapts seamlessly to mobile and desktop devices.
 
 ## Technologies Used
