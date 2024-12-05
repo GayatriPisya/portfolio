@@ -24,6 +24,9 @@ This is my personal portfolio website, developed using Angular. The website show
 
 - **Responsive Design**: The website adapts seamlessly to mobile and desktop devices.
 
+  ![image](https://github.com/user-attachments/assets/b548ebcb-3207-4728-8eb3-57c6962aa6a3)
+
+
 ## Technologies Used
 
 - **Frontend**: Angular
