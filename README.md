@@ -1,7 +1,6 @@
 # Personal Portfolio Website
 
-![image](https://github.com/user-attachments/assets/91a0d599-b435-4372-bebe-bc4985757e01)
-
+![image](https://github.com/user-attachments/assets/91a0d599-b435-4372-bebe-bc4985757e01) 
 This is my personal portfolio website, developed using Angular. The website showcases my skills, projects, and experience as a software developer. It includes sections such as About Me, Skills, Projects, and Contact, all organized into a clean and professional layout.
 
 ## Features
