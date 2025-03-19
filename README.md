@@ -1,47 +1,56 @@
-# Personal Portfolio Website
+# 🌐 Gayatri Pisya - Portfolio
 
-![image](https://github.com/user-attachments/assets/91a0d599-b435-4372-bebe-bc4985757e01) 
-This is my personal portfolio website, developed using Angular. The website showcases my skills, projects, and experience as a software developer. It includes sections such as About Me, Skills, Projects, and Contact, all organized into a clean and professional layout.
+Welcome to my personal portfolio! This repository contains the source code for my portfolio website, built using Angular.
 
-## Features
+## 🚀 Live Demo
+🔗 [Check out my Portfolio](https://gayatripisya.vercel.app/)
 
-- **About Me**: A brief introduction to who I am, my background, and my journey as a software developer.
-  
-  ![image](https://github.com/user-attachments/assets/10fb8c5a-6921-448f-8064-4481d6894657)
+---
 
-- **Skills**: A list of my technical skills, including programming languages, frameworks, and tools I am proficient in.
+## 📌 Technologies Used
 
-  ![image](https://github.com/user-attachments/assets/4878ac73-cee4-4db3-8a0d-3f11fa7df7ff)
+- **Frontend:** Angular, TypeScript, HTML, CSS, Bootstrap
+- **Backend:** None (Static Website)
+- **Hosting:** Vercel
+- **Version Control:** Git & GitHub
 
-- **Projects**: A showcase of the projects I have worked on, including links to repositories and live demos.
+---
 
-  ![image](https://github.com/user-attachments/assets/e063cfc4-bfd1-4281-8c20-b7cfb59ce2f3)
+## 🛠️ How to Install & Run Locally
 
-- **Contact**: A form where visitors can contact me for potential collaborations, job opportunities, or inquiries.
+### 1️⃣ Prerequisites
+Before cloning the repository, ensure you have the following installed:
+- Git ([Download Here](https://git-scm.com/downloads))
+- Node.js & npm ([Download Here](https://nodejs.org/))
+- Angular CLI ([Install Guide](https://angular.io/cli))
+- A code editor (VS Code recommended: [Download Here](https://code.visualstudio.com/))
 
-  ![image](https://github.com/user-attachments/assets/fda3ee77-c00e-4a18-8730-66ff669b8984)
+### 2️⃣ Clone the Repository
+Open your terminal or command prompt and run:
+```sh
+  git clone https://github.com/GayatriPisya/portfolio.git
+```
 
-- **Responsive Design**: The website adapts seamlessly to mobile and desktop devices.
+### 3️⃣ Navigate to the Project Folder
+```sh
+  cd portfolio
+```
 
-  ![image](https://github.com/user-attachments/assets/b548ebcb-3207-4728-8eb3-57c6962aa6a3)
+### 4️⃣ Install Dependencies
+```sh
+  npm install
+```
 
+### 5️⃣ Run the Project Locally
+```sh
+  ng serve
+```
+Then, open `http://localhost:4200/` in your browser to view the application.
 
-## Technologies Used
+---
 
-- **Frontend**: Angular
-- **Styling**: HTML, CSS, Bootstrap (for responsive design)
-- **JavaScript/TypeScript**: For interactive elements and Angular services
-- **Forms**: Angular Reactive Forms (for the contact form functionality)
+## 📫 Contact Me
+- 📧 Email: [your-email@example.com](mailto:gayatripisya@gmail.com)
+- 🔗 LinkedIn: [linkedin.com/in/gayatripisya](https://www.linkedin.com/in/gayatripisya)
+- 🐙 GitHub: [github.com/GayatriPisya](https://github.com/GayatriPisya)
 
-## Installation
-
-### Prerequisites
-
-1. [Node.js](https://nodejs.org/en/) installed on your machine.
-2. [Angular CLI](https://angular.io/cli) installed globally.
-
-### Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
