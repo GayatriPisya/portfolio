@@ -7,8 +7,8 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  isWelcomeHidden: boolean = false;
-  titles: string[] = ['Full Stack Developer', 'Web Designer', 'Software Engineer', 'Prompt Engineer'];
+  
+  titles: string[] = [ 'Full Stack Developer', 'Web Designer', 'Software Engineer','Programmer', 'Prompt Engineer'];
   currentTitle: string = '';
   currentIndex: number = 0;
   isDeleting: boolean = false;
@@ -22,10 +22,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.isWelcomeHidden = true;
-    }, 3000); // Hides welcome page after 3 seconds
-
     if (this.isBrowser) {
       this.type();
     }
@@ -36,6 +32,7 @@ export class HomeComponent implements OnInit {
 
     if (this.isDeleting) {
       this.currentTitle = this.titles[this.currentIndex].substring(0, this.currentTitle.length - 1);
+
       if (this.currentTitle.length === 0) {
         this.isDeleting = false;
         this.currentIndex = (this.currentIndex + 1) % this.titles.length;
@@ -45,6 +42,7 @@ export class HomeComponent implements OnInit {
       }
     } else {
       this.currentTitle = this.titles[this.currentIndex].substring(0, this.currentTitle.length + 1);
+
       if (this.currentTitle.length === currentTitleLength) {
         this.isDeleting = true;
         setTimeout(() => this.type(), this.pauseDuration);
