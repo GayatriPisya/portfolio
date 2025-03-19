@@ -1,4 +1,14 @@
-<div class="content">
+<!-- Welcome Page -->
+<div id="welcome-page" [class.hidden]="isWelcomeHidden">
+  <div class="welcome-content">
+    <h1>🚀 WELCOME TO MY PROFILE</h1>
+    <img src="assets/gaya3.jpg" alt="Gayatri Pisya">
+    <h2>👋 Hey!!! Gayatri Pisya Here 🙂</h2>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div *ngIf="isWelcomeHidden" class="content">
   <h1 class="greeting">
     <span class="intro-text">Hi, I'm</span><span class="signature">Gayatri</span>
   </h1>
@@ -6,15 +16,13 @@
     <span class="typing-animation">{{ currentTitle }}</span>
   </h2>
   <div class="welcome-message">
-    <h1>Step into My Digital World, Where Creativity Meets Code!</h1>
+    <h1>Step into My Digital World, Where Creativity Meets Code !</h1>
   </div>
-  
-  <a href="/projects" class="btn-secondary" aria-label="See my work">
-    <i class="fas fa-desktop"></i>
- See My Work
-</a>
-<a href="/Resume/G3Resume.pdf" class="btn-primary" aria-label="Download my resume" download>
-    <i class="fas fa-cloud-download-alt"></i> Download My Resume
-</a>
 
+  <a href="/projects" class="btn-secondary" aria-label="See my work">
+    <i class="fas fa-desktop"></i> See My Work
+  </a>
+  <a href="/Resume/G3Resume.pdf" class="btn-primary" aria-label="Download my resume" download>
+    <i class="fas fa-cloud-download-alt"></i> Download My Resume
+  </a>
 </div>
