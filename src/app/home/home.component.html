@@ -1,18 +1,37 @@
-<div class="content">
-  <h1 class="greeting">
-    <span class="intro-text">Hi, I'm</span><span class="signature">Gayatri</span>
-  </h1>
-  <h2 class="titles">
-    <span class="typing-animation">{{ currentTitle }}</span>
-  </h2>
-  <div class="welcome-message">
-    <h1>Step into My Digital World, Where Creativity Meets Code!</h1>
+<div class="hero-section">
+  <div class="content">
+    <h1 class="greeting">
+      <span class="intro-text">Hi, I'm</span>
+      <span class="signature">Gayatri</span>
+    </h1>
+
+    <h2 class="titles">
+      <span class="typing-animation">{{ currentTitle }}</span>
+    </h2>
+
+    <p class="subheading">
+      Passionate Full Stack Developer focused on building clean, user-friendly websites and web applications.
+    </p>
+
+    <div class="cta-buttons">
+      <a [routerLink]="'/projects'" class="btn btn-secondary" aria-label="See my work">
+        <i class="fas fa-desktop"></i> See My Work
+      </a>
+
+      <a href="/Resume/G3Resume.pdf" class="btn btn-primary" aria-label="View my resume" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-file-alt"></i> Explore My Resume
+      </a>
+    </div>
   </div>
-  
-  <a [routerLink]="'/projects'" class="btn btn-secondary" aria-label="See my work">
-    <i class="fas fa-desktop"></i> See My Work
-  </a>
-  <a href="/Resume/G3Resume.pdf" class="btn btn-primary" aria-label="Download my resume" download>
-    <i class="fas fa-cloud-download-alt"></i> Download My Resume
-  </a>
+  <div class="social-icons-centered">
+    <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
 </div>
