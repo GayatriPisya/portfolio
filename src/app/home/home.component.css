@@ -83,7 +83,7 @@ body {
 .btn-primary:hover {
   background-color: white;
   color: #721cc3d1;
-  box-shadow: 0 0 15px #6e16ac, 0 0 30px #6a0dadb0;
+
 }
 
 .btn-secondary {
@@ -95,7 +95,6 @@ body {
 .btn-secondary:hover {
   background-color: white;
   color: #DA70D6;
-  box-shadow: 0 0 15px #DA70D6;
 }
 
 .btn i {
