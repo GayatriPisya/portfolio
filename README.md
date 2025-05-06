@@ -50,7 +50,7 @@ Then, open `http://localhost:4200/` in your browser to view the application.
 ---
 
 ## 📫 Contact Me
-- 📧 Email: [your-email@example.com](mailto:gayatripisya@gmail.com)
+- 📧 Email: [gayatripisya@gmail.com](mailto:gayatripisya@gmail.com)
 - 🔗 LinkedIn: [linkedin.com/in/gayatripisya](https://www.linkedin.com/in/gayatripisya)
 - 🐙 GitHub: [github.com/GayatriPisya](https://github.com/GayatriPisya)
 
