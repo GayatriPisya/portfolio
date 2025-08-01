@@ -2,7 +2,7 @@
 #skills {
   margin-top: 80px;
   margin-bottom: 50px;
-  padding: 30px;
+  padding: 10px;
   color: #f5f5f5;
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -40,7 +40,7 @@ h3 {
 
 /* Skill card style */
 .skill-card {
-  width: 250px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
   margin: 5px;
   height: 250px; /* Adjust as needed */
   perspective: 1000px; /* Enables 3D space */
@@ -118,4 +118,10 @@ h3 {
 /* General margin for sectioning */
 .skill-section {
   margin-bottom: 50px;
+}
+/* Responsive code for mobile view */
+@media (max-width: 768px) {
+  .skill-card {
+    width: 250px; /* Decrease width for mobile view */
+  }
 }
