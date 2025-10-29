@@ -109,108 +109,107 @@ h2 {
   color: #cf66ff;
 
 }
-
+/* ===== Experience Section Responsive Grid ===== */
 .experience-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards on large screens */
   gap: 20px;
-  flex-wrap: wrap; 
+  justify-items: center;
+  align-items: stretch;
+  margin-top: 20px;
 }
 
+/* Individual Card Styling */
 .experience-item {
   z-index: 1;
   position: relative;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  background: rgba(92, 60, 152, 0.759);
+  align-items: center;
+  background: rgba(92, 60, 152, 0.85);
   border-radius: 20px;
   padding: 20px;
-  width: fit-content;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .experience-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(161, 69, 207, 0.989);
+  box-shadow: 0 10px 25px rgba(161, 69, 207, 0.95);
 }
 
 .experience-item img {
-  width: 200px; /* Fixed width for logos */
-  justify-content: center;
+  width: 180px;
   height: auto;
-  margin-bottom: 10px; /* Space between logo and text */
+  margin-bottom: 12px;
 }
+
 .experience-details h3 {
-  margin-top: 10px; /* Adjusted for better spacing */
-  margin-bottom: 5px;
-  text-align: center;
-  font-size: 1.5rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #fff;
 }
 
 .experience-details p {
   text-align: center;
-  margin: 5px 0;
+  margin: 8px 0;
+  line-height: 1.5;
   color: #e0e0e0;
+  font-size: 0.95rem;
 }
 
 .experience-details img {
-  width: 430px; /* Adjust certificate image size */
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 360px;
   height: auto;
-  margin-top: 10px; /* Space between text and certificate image */
+  border-radius: 10px;
+  margin-top: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* GitHub Button */
 .github-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center; /* Center the button content */
-  padding: 10px 15px;
-  background-color: #000000;
-  width: fit-content;
+  justify-content: center;
+  padding: 8px 15px;
+  background-color: #000;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: background-color 0.3s, transform 0.3s;
   text-decoration: none;
-  margin: 0 auto; /* This will center the button */
+  margin-top: 10px;
 }
 
 .github-button i {
-  margin-right: 5px;
-  font-size: 1.5rem;
+  margin-right: 6px;
+  font-size: 1.2rem;
 }
 
 .github-button:hover {
-  color: #fff;
   background-color: #8c4bc6e4;
+  transform: scale(1.05);
 }
 
-
-
-/* Mobile View */
-@media (max-width: 768px) {
+/* ===== Responsive Grid Breakpoints ===== */
+@media (max-width: 1024px) {
   .experience-section {
-    width: 100%;
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards for medium screens */
+  }
+}
+
+@media (max-width: 700px) {
+  .experience-section {
+    grid-template-columns: 1fr; /* 1 card for small screens */
   }
 
   .experience-item {
-    width: 90%; /* Use most of the screen width */
-    align-items: center;
-  }
-
-  .experience-item img {
-    width: 150px; /* Smaller logo for mobile */
-    margin: 20px;
-    justify-content: center;
-  }
-
-  .experience-details img {
-    width: 250px; /* Smaller certificate image for mobile */
+    max-width: 90%;
   }
 }
 
