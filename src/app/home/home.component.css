@@ -1,231 +1,359 @@
-/* Global Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+/* =========================================
+HOME / HERO SECTION
+========================================= */
+
+:host {
+display: block;
+width: 100%;
 }
 
-/* Hero Section */
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  z-index: 1;
-  color: white;
-  margin-top: 150px;
+body {
+margin: 0;
+padding: 0;
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f4;
 }
+
+/* Main Content */
+.content {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+z-index: 1;
+color: white;
+margin-top: 120px;
+padding: 0 25px;
+}
+
+/* =========================================
+GREETING
+========================================= */
 
 .greeting {
-  display: flex;
-  align-items: center;
-  font-size: 4rem;
-  line-height: 1.2;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+font-size: 4rem;
+line-height: 1.2;
+margin: 0;
 }
 
 .intro-text {
-  display: inline;
-  margin-right: 10px;
+display: inline;
+margin-right: 12px;
 }
 
 .signature {
-  font-family: cursive;
-  font-size: 4rem;
-  color: #c854d2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+font-family: cursive;
+font-size: 4rem;
+color: #c854d2;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* =========================================
+TYPING TITLE
+========================================= */
+
 .titles {
-  font-size: 2.5rem;
-  margin: 20px 0;
+font-size: 2.5rem;
+margin: 22px 0 10px;
+min-height: 50px;
+font-weight: 600;
 }
 
 .typing-animation {
-  display: inline-block;
-  border-right: 2px solid white;
-  animation: blink 0.7s infinite;
+display: inline-block;
+border-right: 2px solid white;
+padding-right: 6px;
+animation: blink 0.7s infinite;
 }
+
+/* =========================================
+PROFESSIONAL ROLE
+========================================= */
+
+.professional-role {
+margin: 5px 0 18px;
+font-size: 1.15rem;
+font-weight: 500;
+letter-spacing: 0.5px;
+color: #e6b8eb;
+}
+
+.separator {
+margin: 0 10px;
+color: #c854d2;
+font-weight: bold;
+}
+
+/* =========================================
+INTRODUCTION
+========================================= */
 
 .subheading {
-  font-size: 1.2rem;
-  margin: 15px 0 30px;
-  font-weight: 300;
-  color: #ddd;
+max-width: 780px;
+font-size: 1.15rem;
+line-height: 1.7;
+margin: 10px 0 30px;
+font-weight: 300;
+color: #ddd;
 }
+
+/* =========================================
+CTA BUTTONS
+========================================= */
 
 .cta-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
 }
 
-/* Button Styles */
+/* Button Base */
 .btn {
-  padding: 15px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
+padding: 14px 30px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+transition: all 0.3s ease;
+position: relative;
+overflow: hidden;
+margin: 8px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
 }
 
+/* Primary Button */
 .btn-primary {
-  background-color: #721cc3d1;
-  color: white;
-  border: 2px solid #721cc3d1;
+background-color: #721cc3d1;
+color: white;
+border: 2px solid #721cc3d1;
 }
 
 .btn-primary:hover {
-  background-color: white;
-  color: #721cc3d1;
-
+background-color: white;
+color: #721cc3d1;
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(114, 28, 195, 0.3);
 }
 
+/* Secondary Button */
 .btn-secondary {
-  background-color: #DA70D6;
-  color: white;
-  border: 2px solid #DA70D6;
+background-color: #da70d6;
+color: white;
+border: 2px solid #da70d6;
 }
 
 .btn-secondary:hover {
-  background-color: white;
-  color: #DA70D6;
+background-color: white;
+color: #da70d6;
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(218, 112, 214, 0.3);
 }
 
+/* Button Icons */
 .btn i {
-  margin-right: 8px;
-  font-size: 1.2rem;
+margin-right: 8px;
+font-size: 1.1rem;
 }
 
-/* Social Media Icons */
+/* =========================================
+SOCIAL MEDIA
+========================================= */
+
 .social-icons-centered {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 40px;
-  z-index: 10;
-  position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+margin-top: 35px;
+padding-bottom: 30px;
+z-index: 10;
+position: relative;
 }
 
 .social-icons-centered a {
-  font-size: 2.2rem;
-  color: white;
-  text-decoration: none;
-  transition: all 0.3s ease;
+font-size: 2.2rem;
+color: white;
+text-decoration: none;
+transition: all 0.3s ease;
 }
 
 .social-icons-centered a:hover {
-  color: #c854d2;
-  transform: scale(1.2);
+color: #c854d2;
+transform: translateY(-5px) scale(1.15);
 }
 
-/* Responsive */
+/* =========================================
+TYPING CURSOR ANIMATION
+========================================= */
+
 @keyframes blink {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: white; }
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-  .social-icons-centered a {
-    font-size: 1.8rem;
-  }
+0%,
+100% {
+border-color: transparent;
 }
 
-@media (max-width: 480px) {
-  .social-icons-centered a {
-    font-size: 1.6rem;
-  }
+50% {
+border-color: white;
+}
 }
 
+/* =========================================
+TABLET
+========================================= */
 
-/* Responsive Design */
 @media (max-width: 1024px) {
-  .greeting {
-    font-size: 3rem;
-  }
 
-  .signature {
-    font-size: 3rem;
-  }
-
-  .titles {
-    font-size: 1.8rem;
-  }
-
-  .subheading {
-    font-size: 1rem;
-  }
-
-  .cta-buttons {
-    gap: 10px;
-  }
+.content {
+margin-top: 100px;
 }
+
+.greeting {
+font-size: 3.2rem;
+}
+
+.signature {
+font-size: 3.2rem;
+}
+
+.titles {
+font-size: 2rem;
+}
+
+.professional-role {
+font-size: 1.05rem;
+}
+
+.subheading {
+font-size: 1.05rem;
+max-width: 700px;
+}
+}
+
+/* =========================================
+MOBILE
+========================================= */
 
 @media (max-width: 768px) {
-  .greeting {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-  }
 
-  .signature {
-    font-size: 2.5rem;
-  }
-
-  .titles {
-    font-size: 1.6rem;
-  }
-
-  .subheading {
-    font-size: 1rem;
-    margin: 10px 0 20px;
-  }
-
-  .btn {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-    gap: 12px;
-  }
+.content {
+margin-top: 80px;
+padding: 0 20px;
 }
 
+.greeting {
+font-size: 2.5rem;
+margin-bottom: 5px;
+}
+
+.signature {
+font-size: 2.6rem;
+}
+
+.intro-text {
+margin-right: 8px;
+}
+
+.titles {
+font-size: 1.6rem;
+min-height: 40px;
+margin: 15px 0 8px;
+}
+
+.professional-role {
+font-size: 0.95rem;
+line-height: 1.6;
+max-width: 90%;
+}
+
+.separator {
+margin: 0 5px;
+}
+
+.subheading {
+font-size: 1rem;
+line-height: 1.6;
+margin: 10px 0 25px;
+}
+
+.cta-buttons {
+flex-direction: column;
+gap: 8px;
+}
+
+.btn {
+padding: 12px 25px;
+font-size: 0.95rem;
+width: 220px;
+}
+
+.social-icons-centered {
+gap: 20px;
+margin-top: 30px;
+}
+
+.social-icons-centered a {
+font-size: 1.8rem;
+}
+}
+
+/* =========================================
+SMALL MOBILE
+========================================= */
+
 @media (max-width: 480px) {
-  .greeting {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
 
-  .signature {
-    font-size: 2.2rem;
-  }
+.content {
+margin-top: 60px;
+padding: 0 15px;
+}
 
-  .titles {
-    font-size: 1.4rem;
-  }
+.greeting {
+font-size: 2rem;
+}
 
-  .subheading {
-    font-size: 0.9rem;
-  }
+.signature {
+font-size: 2.2rem;
+}
 
-  .btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
+.intro-text {
+margin-right: 5px;
+}
 
-  .cta-buttons {
-    flex-direction: column;
-    gap: 10px;
-  }
+.titles {
+font-size: 1.35rem;
+min-height: 35px;
+}
 
-  .content {
-    margin-top: 80px;
-    padding: 20px;
-  }
+.professional-role {
+font-size: 0.85rem;
+line-height: 1.5;
+}
+
+.subheading {
+font-size: 0.9rem;
+line-height: 1.6;
+}
+
+.btn {
+padding: 10px 20px;
+font-size: 0.85rem;
+width: 200px;
+}
+
+.social-icons-centered {
+gap: 18px;
+margin-top: 25px;
+}
+
+.social-icons-centered a {
+font-size: 1.6rem;
+}
 }
