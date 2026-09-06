@@ -1,43 +1,92 @@
 <!-- src/app/home/home.component.html -->
+
 <div class="hero-section">
   <div class="content">
-    <h1 class="greeting">
-      <span class="intro-text">Hi, I'm</span>
-      <span class="signature">Gayatri</span>
-    </h1>
 
-    <h2 class="titles">
-      <span class="typing-animation">{{ currentTitle }}</span>
-    </h2>
+```
+<h1 class="greeting">
+  <span class="intro-text">Hi, I'm</span>
+  <span class="signature">Pisya Gayatri</span>
+</h1>
 
-    <p class="subheading">
-      Passionate Full Stack Developer focused on building clean, user-friendly websites and web applications.
-    </p>
+<h2 class="titles">
+  <span class="typing-animation">{{ currentTitle }}</span>
+</h2>
 
-    <div class="cta-buttons">
-      <a [routerLink]="'/projects'" class="btn btn-secondary" aria-label="See my work">
-        <i class="fas fa-desktop"></i> See My Work
-      </a>
+<p class="professional-role">
+  Offshore SAP Basis Consultant Trainee
+  <span class="separator">•</span>
+  HCLTech
+</p>
 
-      <a href="/Resume/PisyaGayatriResumenew -2025.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View my resume">
-        <i class="fas fa-file-alt"></i> Explore My Resume
-      </a>
-    </div>
+<p class="subheading">
+  Software Engineer passionate about SAP technologies, enterprise systems,
+  and full-stack development. Currently building my expertise in SAP Basis
+  while continuously exploring modern technologies and practical software solutions.
+</p>
+
+<div class="cta-buttons">
+
+  <a
+    [routerLink]="'/projects'"
+    class="btn btn-secondary"
+    aria-label="Explore my projects">
+    <i class="fas fa-laptop-code"></i>
+    Explore My Work
+  </a>
+
+  <a
+    href="/Resume/PisyaGayatriResumenew -2025.pdf"
+    class="btn btn-primary"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="View my resume">
+    <i class="fas fa-file-alt"></i>
+    View My Resume
+  </a>
+
+</div>
+```
+
   </div>
-  <!-- ✅ SOCIAL ICONS -->
+
+  <!-- SOCIAL LINKS -->
+
   <div class="social-icons-centered">
-    <a href="https://www.linkedin.com/in/gayatri-pisya" target="_blank" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/GayatriPisya" target="_blank" aria-label="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-    
-    <a href="https://x.com/Gayatri_pisya" target="_blank" aria-label="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://www.instagram.com/_shiuili_03/" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
+
+```
+<a
+  href="https://www.linkedin.com/in/gayatri-pisya"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn">
+  <i class="fab fa-linkedin"></i>
+</a>
+
+<a
+  href="https://github.com/GayatriPisya"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="GitHub">
+  <i class="fab fa-github"></i>
+</a>
+
+<a
+  href="https://x.com/Gayatri_pisya"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="X">
+  <i class="fab fa-twitter"></i>
+</a>
+
+<a
+  href="https://www.instagram.com/gayatri_pisya"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+```
+
   </div>
 </div>
